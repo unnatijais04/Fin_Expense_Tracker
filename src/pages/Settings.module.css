@@ -1,0 +1,113 @@
+.page { display: flex; flex-direction: column; gap: 1rem; max-width: 680px; }
+
+.section {
+  background: var(--bg2);
+  border: 1px solid var(--border);
+  border-radius: var(--rL);
+  padding: 1.25rem 1.5rem;
+}
+
+.sectionTitle {
+  font-family: var(--font-head);
+  font-size: 13px;
+  font-weight: 600;
+  color: var(--text2);
+  text-transform: uppercase;
+  letter-spacing: 0.7px;
+  margin-bottom: 1.1rem;
+}
+
+.row {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 1rem;
+  padding: 0.5rem 0;
+}
+
+.rowLabel { flex: 1; }
+
+.rowName { font-size: 14px; font-weight: 500; }
+
+.rowDesc { font-size: 12px; color: var(--text3); margin-top: 2px; }
+
+.rowControl { display: flex; gap: 8px; align-items: center; }
+
+.divider { height: 1px; background: var(--border); margin: 0.75rem 0; }
+
+.input {
+  background: var(--bg3);
+  border: 1px solid var(--border);
+  border-radius: var(--r);
+  padding: 8px 12px;
+  font-size: 13.5px;
+  color: var(--text);
+  width: 140px;
+  transition: border-color 0.15s;
+}
+
+.input:focus { outline: none; border-color: var(--brand); }
+
+.select {
+  background: var(--bg3);
+  border: 1px solid var(--border);
+  border-radius: var(--r);
+  padding: 8px 12px;
+  font-size: 13px;
+  color: var(--text);
+  cursor: pointer;
+}
+
+.select option { background: var(--bg3); }
+
+.btn {
+  padding: 8px 16px;
+  border-radius: var(--r);
+  font-size: 13px;
+  font-weight: 500;
+  cursor: pointer;
+  transition: all 0.15s;
+  font-family: var(--font);
+}
+
+.btnPrimary { background: var(--brand); border: none; color: #fff; }
+.btnPrimary:hover { background: var(--brand-dark); }
+
+.btnOutline { background: transparent; border: 1px solid var(--border); color: var(--text2); }
+.btnOutline:hover { border-color: var(--border2); color: var(--text); }
+
+.btnDanger { background: rgba(220, 38, 38, 0.12); border: 1px solid rgba(220, 38, 38, 0.25); color: #f87171; }
+.btnDanger:hover { background: rgba(220, 38, 38, 0.2); }
+
+.stats {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 10px;
+  margin-bottom: 1rem;
+}
+
+.statBox {
+  background: var(--bg3);
+  border-radius: var(--r);
+  padding: 0.9rem 1rem;
+  text-align: center;
+}
+
+.statVal {
+  font-family: var(--mono);
+  font-size: 22px;
+  font-weight: 500;
+  color: var(--brand-mid);
+}
+
+.statLabel { font-size: 11px; color: var(--text3); margin-top: 4px; }
+
+.actions { display: flex; gap: 10px; }
+
+.aboutGrid { display: flex; flex-direction: column; gap: 8px; }
+
+.aboutRow { display: flex; justify-content: space-between; font-size: 13.5px; padding: 4px 0; }
+
+.aboutKey { color: var(--text3); }
+
+.aboutVal { font-family: var(--mono); font-size: 12.5px; color: var(--text2); }

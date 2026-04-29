@@ -1,0 +1,63 @@
+.page { display: flex; flex-direction: column; gap: 1rem; }
+
+.controls {
+  display: flex;
+  gap: 8px;
+  flex-wrap: wrap;
+}
+
+.search {
+  flex: 1;
+  min-width: 200px;
+  background: var(--bg2);
+  border: 1px solid var(--border);
+  border-radius: var(--r);
+  padding: 9px 12px;
+  font-size: 13.5px;
+  color: var(--text);
+  transition: border-color 0.15s;
+}
+
+.search:focus { outline: none; border-color: var(--brand); }
+
+.select {
+  background: var(--bg2);
+  border: 1px solid var(--border);
+  border-radius: var(--r);
+  padding: 9px 12px;
+  font-size: 13px;
+  color: var(--text);
+  cursor: pointer;
+}
+
+.select option { background: var(--bg2); }
+
+.pills { display: flex; gap: 6px; flex-wrap: wrap; }
+
+.pill {
+  padding: 5px 14px;
+  border-radius: 20px;
+  font-size: 12px;
+  border: 1px solid var(--border);
+  background: transparent;
+  color: var(--text2);
+  transition: all 0.15s;
+  cursor: pointer;
+}
+
+.pill:hover { border-color: var(--border2); color: var(--text); }
+.pill.active { background: var(--brand); color: #fff; border-color: var(--brand); }
+
+.count { font-size: 12px; color: var(--text3); }
+
+.list { display: flex; flex-direction: column; gap: 6px; }
+
+.empty {
+  text-align: center;
+  padding: 3rem;
+  color: var(--text3);
+  font-size: 13px;
+  background: var(--bg2);
+  border: 1px solid var(--border);
+  border-radius: var(--rL);
+}

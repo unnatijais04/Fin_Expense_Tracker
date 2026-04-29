@@ -1,0 +1,51 @@
+.page { display: flex; flex-direction: column; gap: 1.5rem; }
+
+.cards {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 12px;
+}
+
+.charts {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 12px;
+}
+
+.chartBox {
+  background: var(--bg2);
+  border: 1px solid var(--border);
+  border-radius: var(--rL);
+  padding: 1.25rem;
+}
+
+.chartTitle {
+  font-size: 11px;
+  text-transform: uppercase;
+  letter-spacing: 0.7px;
+  color: var(--text3);
+  font-weight: 500;
+  margin-bottom: 1rem;
+}
+
+.catList { display: flex; flex-direction: column; gap: 10px; }
+
+.catRow { display: flex; align-items: center; gap: 10px; }
+
+.catLabel { font-size: 12px; width: 80px; flex-shrink: 0; color: var(--text2); }
+
+.catTrack { flex: 1; height: 6px; background: var(--bg4); border-radius: 3px; overflow: hidden; }
+
+.catFill { height: 100%; border-radius: 3px; transition: width 0.5s cubic-bezier(.4,0,.2,1); }
+
+.catAmt { font-family: var(--mono); font-size: 12px; color: var(--text2); width: 70px; text-align: right; }
+
+.section { display: flex; flex-direction: column; gap: 0.75rem; }
+
+.sectionHead { display: flex; align-items: center; justify-content: space-between; }
+
+.sectionTitle { font-family: var(--font-head); font-size: 14px; font-weight: 600; }
+
+.txList { display: flex; flex-direction: column; gap: 6px; }
+
+.empty { font-size: 13px; color: var(--text3); padding: 1rem 0; text-align: center; }
